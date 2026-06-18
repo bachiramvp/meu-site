@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Unibox</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+
+    <div class="logo-area">
+        <img src="imagens/logo.jpeg" class="logo-img">
+        <div class="logo">unibox</div>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="boxes.html">Boxes</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+</header>
+
+<section class="page-top">
+
+    <h1>Entre em Contato</h1>
+
+    <p>
+        Tire dúvidas, envie sugestões ou fale com nossa equipe.
+    </p>
+
+</section>
+
+<section class="contact-container">
+
+    <div class="contact-form">
+
+        <input type="text" placeholder="Seu nome">
+
+        <input type="email" placeholder="Seu email">
+
+        <textarea placeholder="Sua mensagem"></textarea>
+
+        <button>
+            Enviar Mensagem
+        </button>
+
+    </div>
+
+</section>
+
+<section class="info-section">
+
+    <h2>Informações</h2>
+
+    <div class="info-grid">
+
+        <div class="info-card">
+            <h3>📩 Email</h3>
+            <p>contato@unibox.com</p>
+        </div>
+
+        <div class="info-card">
+            <h3>📱 Instagram</h3>
+            <p>@unibox.oficial</p>
+        </div>
+
+        <div class="info-card">
+            <h3>📍 Localização</h3>
+            <p>São Paulo - SP</p>
+        </div>
+
+        <div class="info-card">
+            <h3>🕘 Atendimento</h3>
+            <p>Segunda à Sexta — 08h às 18h</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="faq">
+
+    <h2>Perguntas Frequentes</h2>
+
+    <div class="faq-item active">
+
+        <button class="faq-question">
+            Quanto tempo demora a entrega?
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                O prazo médio é de 5 a 10 dias úteis.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="faq-item">
+
+        <button class="faq-question">
+            Posso cancelar minha assinatura?
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                Sim. Você pode cancelar quando desejar.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="faq-item">
+
+        <button class="faq-question">
+            Os produtos são sustentáveis?
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                Sim. Trabalhamos com fornecedores conscientes e cruelty free.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+            <h3>Unibox</h3>
+
+            <p>
+                Experiências premium em autocuidado.
+            </p>
+        </div>
+
+        <div>
+            <h4>Contato</h4>
+
+            <p>contato@unibox.com</p>
+            <p>@unibox.oficial</p>
+            <p>São Paulo - SP</p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 Unibox — Todos os direitos reservados.
+    </div>
+
+</footer>
+
+<script>
+
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+
+    const question = item.querySelector(".faq-question");
+
+    question.addEventListener("click", () => {
+
+        item.classList.toggle("active");
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
